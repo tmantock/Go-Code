@@ -16,6 +16,7 @@ func main() {
 	}
 
 	bs, _ := ioutil.ReadAll(res.Body)
+	defer res.Body.Close()
 	str := string(bs)
 	fmt.Println(str)
 
