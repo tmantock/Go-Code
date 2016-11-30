@@ -10,6 +10,8 @@ type person struct {
 
 type doubleZero struct {
 	person
+	//Overwrite
+	//First string
 	LicenseToKill bool
 }
 
@@ -20,6 +22,7 @@ func main() {
 			Last:  "Bond",
 			Age:   20,
 		},
+		//First: "Joe",
 		LicenseToKill: true,
 	}
 
