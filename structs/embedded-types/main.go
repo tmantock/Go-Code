@@ -15,6 +15,14 @@ type doubleZero struct {
 	LicenseToKill bool
 }
 
+func (p person) greeting() {
+	fmt.Println("Hello, I am a normal person.")
+}
+
+func (dz doubleZero) greeting() {
+	fmt.Println("Hello I'm a secret agent.")
+}
+
 func main() {
 	p1 := doubleZero{
 		person: person{
@@ -37,4 +45,9 @@ func main() {
 
 	fmt.Println(p1.First, p1.person.First, p1.LicenseToKill)
 	fmt.Println(p2.First, p2.person.First, p2.LicenseToKill)
+
+	p1.greeting()
+	p1.person.greeting()
+	p2.person.greeting()
+	p2.greeting()
 }

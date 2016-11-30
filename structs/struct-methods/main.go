@@ -11,6 +11,7 @@ type person struct {
 func (p person) fullName() string {
 	return p.first + p.last
 }
+
 func main() {
 	p1 := person{"James", "Bond", 25}
 	p2 := person{"Sly", "Cooper", 18}
