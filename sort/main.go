@@ -16,11 +16,20 @@ func main() {
 
 	s := []string{"Zeno", "John", "Al", "Jenny"}
 	fmt.Println(s)
+
 	sort.StringSlice(s).Sort()
 	//sort.Sort(StringSlice(s))
+	fmt.Println(s)
+
+	//sort.String() takes a slice of strings
+	sort.Strings(s)
 	fmt.Println(s)
 
 	fmt.Println(studyGroup)
 	sort.Sort(studyGroup)
 	fmt.Println(studyGroup)
+
+	//Reverse string array
+	sort.Sort(sort.Reverse(sort.StringSlice(s)))
+	fmt.Println(s)
 }
