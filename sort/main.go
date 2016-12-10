@@ -32,4 +32,15 @@ func main() {
 	//Reverse string array
 	sort.Sort(sort.Reverse(sort.StringSlice(s)))
 	fmt.Println(s)
+
+	n := []int{5, 7, 8, 34, 67, 80, 10, 4, 11}
+
+	fmt.Println(n)
+	sort.Sort(sort.IntSlice(n))
+	fmt.Println(n)
+	sort.Sort(sort.Reverse(sort.IntSlice(n)))
+	fmt.Println(n)
+
+	sort.Ints(n)
+	fmt.Println(n)
 }
